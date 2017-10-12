@@ -10,7 +10,10 @@
 from django.conf.urls import url
 from .views import index
 
-
+# 配置 URL 路由
+# 设置项目路径下 urls.py 文件,在 urlpatterns 下添加 url(r'^路径/', include('映射 app urls.py')),
+# 在 app 跟路径添加 urls.py 文件,设置映射路由.
+# index 的访问完整路径: http://127.0.0.1:8000/bookTest/index/
 urlpatterns = [
     url(r'^index/$', index),
 ]
