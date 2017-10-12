@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # Spider.py
@@ -24,10 +24,10 @@ if __name__ == '__main__':
         reponse = urllib2.urlopen(request)
         content = reponse.read()
     except urllib2.HTTPError as e:
-        print e
+        print(e)
         exit()
     except urllib2.URLError as e:
-        print e
+        print(e)
         exit()
     # print content
     # 2.根据抓取到内容提取想要的数据
@@ -43,7 +43,7 @@ if __name__ == '__main__':
             with open(filePath, 'w') as file:
                 file.write(item[1].replace('\n', '').replace('<br/>', '\n'))
         except IOError as e:
-            print e
+            print(e)
 
     # 4.抓取其他剩下页面数据
     # 循环上边过程,修改页码

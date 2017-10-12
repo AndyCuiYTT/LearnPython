@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # RE_test.py
@@ -42,5 +42,5 @@ if __name__ == '__main__':
     str = 'sdsfsfdsdsfwe18315915937sf15277883465s-=-=---'
     # 0?(13|14|15|18)[0-9]{9}
     regex_phone = re.compile('(0?(?:13|14|15|18)[0-9]{9})')
-    print regex_phone.findall(str)
+    print(regex_phone.findall(str))
 

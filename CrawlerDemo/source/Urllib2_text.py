@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # Urllib2_text.py
@@ -20,10 +20,10 @@ if __name__ == '__main__':
     # 发送请求和接收响应
     try:
         response = urllib2.urlopen(request)
-        print response.read()
-    except urllib2.HTTPError, e:
-        print e.code
-        print e.reason
+        print(response.read())
+    except urllib2.HTTPError as e:
+        print(e.code)
+        print(e.reason)
 
 
 
